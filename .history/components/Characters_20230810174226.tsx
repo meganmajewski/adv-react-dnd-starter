@@ -5,7 +5,6 @@ import Character from "./Character";
 import CharacterModel from "../models/CharacterModel";
 import AddCharacterForm from "./AddCharacterForm";
 import { starterCharacters } from "@/models/starterCharacters";
-import { Button } from "@mui/material";
 
 const Charcters = () => {
   const [startIndex, setStartIndex] = useState(0);

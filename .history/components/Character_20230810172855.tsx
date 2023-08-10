@@ -1,6 +1,5 @@
 "use client";
 
-import { memo } from "react";
 import CharacterModel from "../models/CharacterModel";
 import { Button, Card, CardContent } from "@mui/material";
 

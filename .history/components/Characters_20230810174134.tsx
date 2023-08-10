@@ -5,7 +5,6 @@ import Character from "./Character";
 import CharacterModel from "../models/CharacterModel";
 import AddCharacterForm from "./AddCharacterForm";
 import { starterCharacters } from "@/models/starterCharacters";
-import { Button } from "@mui/material";
 
 const Charcters = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -50,28 +49,6 @@ const Charcters = () => {
             />
           ))}
         </ul>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "0 20px 30px 20px",
-        }}
-      >
-        <Button
-          variant="outlined"
-          onClick={() => setStartIndex((prev) => prev - 30)}
-          disabled={startIndex - 30 < 0}
-        >
-          Prev 30
-        </Button>
-        <Button
-          variant="outlined"
-          onClick={() => setStartIndex((prev) => prev + 30)}
-          disabled={startIndex + 30 > starterCharacters.length}
-        >
-          Next 30
-        </Button>
       </div>
     </div>
   );

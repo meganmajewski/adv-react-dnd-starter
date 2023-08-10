@@ -1,6 +1,5 @@
 "use client";
 
-import { memo } from "react";
 import CharacterModel from "../models/CharacterModel";
 import { Button, Card, CardContent } from "@mui/material";
 
@@ -27,13 +26,13 @@ const Character = ({
             <p>Level: </p>
             <Button
               variant="outlined"
-              sx={{ mx: 1 }}
+              sx={{mx: 1}}
               onClick={() => downgradeCharLevel(index)}
             >
               -
             </Button>
             <p>{character.level}</p>
-            <Button variant="outlined" sx={{ mx: 1 }} onClick={() => upgradeCharLevel(index)}>
+            <Button variant="outlined" sx={{mx: 1}} onClick={() => upgradeCharLevel(index)}>
               +
             </Button>
           </div>
@@ -43,4 +42,4 @@ const Character = ({
   );
 };
 
-export default memo(Character);
+export default Character;

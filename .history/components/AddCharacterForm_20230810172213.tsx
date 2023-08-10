@@ -1,4 +1,4 @@
-import { FormEvent, memo, useState } from "react";
+import { FormEvent, useState } from "react";
 import CharacterModel from "../models/CharacterModel";
 import { Button, Stack, TextField } from "@mui/material";
 
@@ -40,4 +40,4 @@ const AddCharacterForm = ({ onAdd }: Props) => {
   );
 };
 
-export default memo(AddCharacterForm);
+export default AddCharacterForm;
